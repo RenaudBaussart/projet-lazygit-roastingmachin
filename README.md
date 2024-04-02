@@ -1,12 +1,12 @@
   <p align="center">
-  <img src="./res/Img/User_Manual.png" alt="image" width="300" height="auto">
+  <img src="./res/Img/Banner_readme.png" alt="image" width="600" height="auto">
 <h1 align="center">LazygitProject</h1>
 
 Bienvenue sur LazygitProject! Il s’agit d’un projet fantastique visant à fournir une solution complète pour notre promo `dev-inté-p2-2024`
 
 ## Table des matières
 
-- [Fonctionnalités](#fonctionnalités)
+- [Fonctionnalités](#fonctionnalités-mag_right)
   - [Interface Intuitive](#ancre1)
   - [Gestion des Commits](#ancre2)
   - [Gestion des Branches](#ancre3)
@@ -16,8 +16,8 @@ Bienvenue sur LazygitProject! Il s’agit d’un projet fantastique visant à fo
   - [ Résolution des Conflits de Fusion](#ancre7)
   - [Visualiseur de Journal](#ancre8)
   - [Personnalisation](#ancre9)
-- [Cloner le repositorie](#cloner-le-repositorie)
-- [Installation](./src/Install.md)
+- [Cloner le repositorie](#cloner-le-repositorie-outbox_tray)
+- [Installation](#installation-wrench)
   - [Homebrew](#homebrew)
   - [MacPorts](#macports)
   - [Void Linux](#void-linux)
@@ -36,12 +36,12 @@ Bienvenue sur LazygitProject! Il s’agit d’un projet fantastique visant à fo
     - [Cherry-pick](#ancre15)
     - [Rebase interactif](#ancre16)
     - [Commande personnalisé](#ancre17) 
-- [Convention de nommage](#convention-de-nommage)
+- [Convention de nommage](#convention-de-nommage-bookmark_tabs)
 - [Exercice](#exercice-open_file_folder)
-- [Contributing](#pencil2-contribution)
-- [FAQ](#faq)
+- [Contributing](#contribution-pencil2)
+- [FAQ](#faq-books)
 
-##  Fonctionnalités
+##  Fonctionnalités :mag_right:
 
 
 Lazygit est une interface utilisateur basée sur terminal (TUI) pour Git, conçue pour simplifier et rationaliser les tâches courantes de Git grâce à une interface facile à utiliser. Elle offre une représentation visuelle de l'état du dépôt Git et permet aux utilisateurs d'interagir avec Git sans avoir besoin de se souvenir des options de ligne de commande complexes. Certaines des fonctionnalités remarquables de Lazygit comprennent :
@@ -66,12 +66,12 @@ Lazygit est une interface utilisateur basée sur terminal (TUI) pour Git, conçu
 
 En somme, Lazygit vise à rendre les opérations Git plus accessibles et plus efficaces pour les utilisateurs novices et expérimentés en fournissant une interface visuelle pratique pour les tâches Git courantes.
 
-## Cloner le repositorie:
+## Cloner le repositorie :outbox_tray:
 
 ```
 https://github.com/Simplon-hdf/projet-lazygit-roastingmachin.git
 ```
-## Installation
+## Installation :wrench:
 
 <p align="center">
 <img src="./res/Img/installationlogo.png" alt="image" width="300" height="auto">
@@ -140,7 +140,7 @@ Pour voir les dernières versions, allez sur [cette page](https://repology.org/p
   <p align="center">
   <img src="./res/Img/TerminalTUI.jpeg" alt="image" width="300" height="auto">
 
-Pour en savoir plus sur le TUI notre fiche [ici](./src/TerminalTUI.md).
+Pour en savoir plus sur le TUI consulter notre fiche [ici](./src/TerminalTUI.md).
 
 ## Cheat Sheet :page_with_curl:
 
@@ -155,7 +155,7 @@ Voici une liste de commandes et d'opérations courantes pour utiliser LazyGit :
 
 2. **`Tab`** : Basculer entre les différentes sections de l'interface (fichiers, staging, commits, etc.).
 
-3. **`c`** : faire un commit.
+3. **`c`** : Faire un commit.
 
 4. **`q`** : Quitter LazyGit.
 
@@ -163,7 +163,7 @@ Voici une liste de commandes et d'opérations courantes pour utiliser LazyGit :
 
 1. **Stage / Unstage :**<a id="ancre10"></a>
    - Appuyez sur `space` pour ajouter ou retirer un fichier de la zone de staging.
-   - Utilisez `space` sur un fichier stagé pour annuler les modifications d'un fichier déjà stagé.
+   - Utilisez `space` sur un fichier indexé pour annuler les modifications d'un fichier déjà indexé.
 
 2. **Commit :**<a id="ancre11"></a>
    - Appuyez sur `c` pour ouvrir la fenêtre de commit.
@@ -179,14 +179,14 @@ Voici une liste de commandes et d'opérations courantes pour utiliser LazyGit :
 
 5. **Branches :**<a id="ancre14"></a>
    - se rendre dans l'onglet `3`.
-   - Appuyez sur `n` pour créer une nouvel branch.
-   -pour jonglet entre les branch utiliser `espace`
-   -pour merge des branch :`M`.
+   - Appuyez sur `n` pour créer une nouvelle branche.
+   - Pour jongler entre les branches utiliser `espace`
+   - Pour merge des branches :`M`.
 
 ### - Autres fonctionnalités :
 
 1. **Cherry-Pick :**<a id="ancre15"></a>
-   - se rendre and la fenetre `4`
+   - Se rendre and la fenetre `4`
    - Appuyez sur `shift-c` copier le commit selectionée.
    - Appuyez sur `shift-v` pour coller le commit.
 
@@ -200,7 +200,7 @@ Utilisez ces raccourcis et commandes pour accélérer votre flux de travail Git 
 
 Accès a la page [ici](./src/cheatsheet.md).
 
-## Convention de nommage
+## Convention de nommage :bookmark_tabs:
 
 <p align="center">
     <img src="./res/Img/Name_Convention.png" width="300" height="auto">
@@ -213,8 +213,8 @@ Accès a la page [ici](./src/cheatsheet.md).
   - Le premier élément suivant la date sera l'élément le plus explicite
 
 
-  2. ### Convention des commit : 
-  - structure du commit : 
+  2. ### Convention des commits : 
+  - Structure du commit : 
     
     <type>[étendu optionnel]:< description>
     [corp optionnel]
@@ -230,17 +230,17 @@ Accès a la page [ici](./src/cheatsheet.md).
 
  |type|description|
  |----|-----------|
- |build:| changement qui affecte le build system ou des dépendances externes|
- |ci:| changement de notre fichier et scripts de configuration CI|
- |docs:|changement uniquement dans la documentation|
- |perf:|changement du code afin d'améliorer les performances|
- |refactor:|un changement de code qui n'ajoute ni des fonctionnalités ni des corrections de bugs |
- |style:| changement qui n'affecte pas le code|
- |test:| ajoute ou midifie des test|
- |chore|modification de fichier sans affecter le code|
+ |build:| Changement qui affecte le build system ou des dépendances externes|
+ |ci:| Changement de notre fichier et scripts de configuration CI|
+ |docs:| Changement uniquement dans la documentation|
+ |perf:| Changement du code afin d'améliorer les performances|
+ |refactor:| Un changement de code qui n'ajoute ni des fonctionnalités ni des corrections de bugs |
+ |style:| Changement qui n'affecte pas le code|
+ |test:| Ajoute ou modifie des tests|
+ |chore| Modification de fichier sans affecter le code|
 
-  3. ### étendu optionnel :
-    - pointe le fichier spécifique.
+  3. ### Étendue optionnelle :
+    - Pointe le fichier spécifique.
 
   4. ### Commit Description : 
     - Utiliser le **présent**. Utiliser "Add fonctionnalité xy" or "Add tests pour"
@@ -256,15 +256,18 @@ La page [ici](./docs/Convention.md)
   <p align="center">
   <img src="./res/Img/logo exercice.jpeg" alt="image" width="300" height="auto">
 
-Toujours un peu flou pour vous ? rien de telle que de s'exercer pour mieux comprendre. Voici un petit exercice qui vous permettra de vous entrainer et ainsi de mieux comprendre [Lazygit](./docs/exo.md).
+Toujours un peu flou pour vous ? rien de telle que de s'exercer pour mieux comprendre. Voici un petit exercice pour vous entrainer et ainsi de mieux comprendre [Lazygit](./docs/exo.md).
 
-## :pencil2: Contribution
+## Contribution :pencil2: 
 
 Nous aimons votre participation! Veuillez consulter le [guide de contribution](./src/Contributing.md).
 
-## FAQ
+## FAQ :books:
 
 Que représentent les couleurs commit ?
 - Vert : le commit est inclus dans la branche master
 - Jaune : le commit n’est pas inclus dans la branche master
 - Rouge : le commit n’a pas été poussé vers la branche amont
+
+-------------------------
+ [retour à la table des matières](#table-des-matières)
