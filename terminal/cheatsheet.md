@@ -2,13 +2,31 @@
 
 ### File System Navigation  
 - `ls` Lists files and directories in the current directory.
+    - `-l` : Format de liste longue, affichant des informations supplémentaires sur les fichiers.
+    - `-a` : Inclure les fichiers cachés (ceux commençant par un point).
+    - `-h` : Affiche les tailles de fichiers au format lisible par l'homme.
+    - `-t` : Trie les fichiers par heure de modification.
+    - `-r` : Inverse l'ordre du tri.
+    - `-R` : Liste récursivement les sous-répertoires rencontrés.
 - `cd [directory_name]` Changes the working directory.
 - `pwd` Prints the path of the current directory.
 - `cat [file_name]` Display file contents.
 - `less [file_name]` View file contents one page at a time.
+    - `Barre d'espace` : Avance d'une page.
+    - `b` : Recule d'une page.
+    - `/motif` : Recherche vers l'avant pour la prochaine occurrence du motif.
+    - `?motif` : Recherche vers l'arrière pour l'occurrence précédente du motif.
+    - `q` : Quitte less.
 - `head [file_name]` Display the first few lines of a file.
+    - `-n [num]` : Affiche les [num] premières lignes du fichier.
 - `tail [file_name]` Display the last few lines of a file.
+    - `-n [num]` : Affiche les [num] dernières lignes du fichier.
+    - `-f` : Affiche les données ajoutées au fur et à mesure que le fichier augmente de taille (tail -f).
 - `grep [pattern] [file_name]` Search for a pattern in a file.
+    - `-i` : Ignore les distinctions de cas dans le motif et les fichiers d'entrée.
+    - `-v` : Inverse la correspondance, sélectionnant les lignes non correspondantes.
+    - `-n` : Précède chaque ligne de sortie du numéro de ligne basé sur 1 dans son fichier d'entrée.
+    - `-r` : Recherche récursivement les sous-répertoires répertoriés.
 
 ### File Manipulation
 
@@ -19,6 +37,7 @@
     - `-rf ` Deletes all child of this file or directory
 - `rmdir [directory_name]` Deletes an empty directory.
 - `cp [source] [destination]` Copies files or directories.
+    - `-r` : Copie récursivement les répertoires et leurs contenus.
 - `mv [source] [destination]` Moves or renames files or directories.
 
 ### Permission Management
@@ -49,7 +68,13 @@
 ### Archives and Compression
 
 - `tar -cvf [archive_name.tar] [files]` Creates a tar archive.
+    - `-c` : Crée une nouvelle archive.
+    - `-v` : Mode verbeux, montre les fichiers archivés.
+    - `-f [nom_archive.tar]` : Spécifie le nom de l'archive.
 - `tar -xvf [archive_name.tar]` Extracts a tar archive.
+    - `-x` : Extrait les fichiers d'une archive.
+    - `-v` : Mode verbeux, montre les fichiers extraits.
+    - `-f [nom_archive.tar]` : Spécifie le nom de l'archive.
 - `gzip [file_name]` Compresses a file using gzip.
 - `gunzip [file_name.gz]` Decompresses a gzip file.
 
@@ -62,7 +87,7 @@
 	- `-l` Login name
 - `scp [file] [user@ip_address:destination]` Copies files via SSH.
 
-Help and Documentation
+### Help and Documentation
 
 - `man [command]` Displays the manual for a specific command.
     - `--help` Add this to a command to display quick help.
